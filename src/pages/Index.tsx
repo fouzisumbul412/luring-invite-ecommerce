@@ -4,6 +4,7 @@ import FloatingWhatsApp from '@/components/layout/FloatingWhatsApp';
 import HeroSection from '@/components/home/HeroSection';
 import CategoriesCarousel from '@/components/home/CategoriesCarousel';
 import BestSellersCarousel from '@/components/home/BestSellersCarousel';
+import WhyChooseUs from '@/components/home/WhyChooseUs';
 import ProcessSection from '@/components/home/ProcessSection';
 import ShowcaseParallax from '@/components/home/ShowcaseParallax';
 import TestimonialsSection from '@/components/home/TestimonialsSection';
@@ -17,6 +18,7 @@ const Index = () => {
         <HeroSection />
         <CategoriesCarousel />
         <BestSellersCarousel />
+        <WhyChooseUs />
         <ProcessSection />
         <ShowcaseParallax />
         <TestimonialsSection />
