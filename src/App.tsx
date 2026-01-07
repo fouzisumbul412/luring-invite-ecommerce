@@ -13,6 +13,7 @@ import Contact from "./pages/Contact";
 import FAQ from "./pages/FAQ";
 import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
+import Services from "./pages/Services";
 import NotFound from "./pages/NotFound";
 import ScrollToTop from "./components/ScrollToTop";
 
@@ -31,6 +32,7 @@ const App = () => (
           <Route path="/collections/:slug" element={<CollectionDetail />} />
           <Route path="/product/:slug" element={<ProductDetail />} />
           <Route path="/about" element={<About />} />
+          <Route path="/services" element={<Services />} />
           <Route path="/process" element={<Process />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/faq" element={<FAQ />} />
