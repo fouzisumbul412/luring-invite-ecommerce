@@ -21,7 +21,6 @@ import ScrollExpandMedia from "@/components/ui/scroll-expansion-hero";
 import MouseButterflyTrail from "@/components/ui/MouseButterflyTrail";
 
 import InviteSection from "@/components/InviteSection";
-import AboutModal from "@/components/AboutModal";
 
 const Index = () => {
   // ✅ FIX: avoid window.open collision, define state
