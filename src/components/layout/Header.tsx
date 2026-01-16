@@ -83,13 +83,13 @@ const Header: React.FC = () => {
 
   return (
     <>
-      {/* ================= TOP BAR ================= */}
-      <div className="fixed top-0 left-0 right-0 z-50">
-        <div className="bg-[#a86dcd] text-white text-xs sm:text-sm px-3 py-2 overflow-hidden">
-          <div className="max-w-7xl mx-auto flex items-center gap-3">
-            {/* Phone */}
-            <div className="flex items-center gap-2 shrink-0">
-              <Phone className="w-4 h-4" />
+      {/* ✅ STICKY WRAPPER */}
+      <div className="sticky top-0 z-50 w-full">
+        {/* ================= TOP BAR ================= */}
+        <div className="bg-[#a86dcd] text-white text-xs sm:text-sm">
+          <div className="max-w-7xl mx-auto px-3 py-2 grid grid-cols-[auto_1fr_auto] items-center gap-3">
+            {/* Left: Phone + Email (ICONS ONLY ON MOBILE) */}
+            <div className="flex items-center gap-3">
               <a
                 href="tel:+919121080131"
                 className="inline-flex items-center gap-2 font-semibold"
@@ -114,7 +114,7 @@ const Header: React.FC = () => {
             </div>
 
             {/* Center: Slider */}
-            <div className="relative h-5 overflow-hidden justify-self-center text-center w-[220px] sm:w-[400px] md:w-[520px]">
+            <div className="relative h-5 overflow-hidden justify-self-center text-center w-[190px] sm:w-[360px] md:w-[520px]">
               <AnimatePresence mode="wait">
                 <motion.div
                   key={activeIndex}
@@ -167,7 +167,7 @@ const Header: React.FC = () => {
         </div>
 
         {/* ================= HEADER ================= */}
-        <header className="bg-white shadow-md top-0 z-50 font-outfit">
+        <header className="bg-white shadow-md font-outfit">
           <div className="max-w-7xl mx-auto px-4">
             <div className="flex items-center justify-between py-2">
               {/* Logo */}
@@ -222,6 +222,7 @@ const Header: React.FC = () => {
           </div>
         </header>
       </div>
+
       {/* ================= MOBILE MENU ================= */}
       {isMobileMenuOpen && (
         <div className="fixed inset-0 z-[60] bg-white overflow-y-auto">
